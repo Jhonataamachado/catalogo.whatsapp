@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo - Burger Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🍔 Burger Express</h1>
+        <p>Faça seu pedido direto no WhatsApp!</p>
+    </header>
+
+    <main id="lista-produtos">
+        <div class="produto">
+            <h3>X-Burger Artesanal</h3>
+            <p>Pão brioche, hambúrguer 160g e queijo prato.</p>
+            <span class="preco">R$ 25.00</span>
+            <button onclick="adicionarCarrinho('X-Burger Artesanal', 25.00)">Adicionar</button>
+        </div>
+
+        <div class="produto">
+            <h3>Batata Frita Rústica</h3>
+            <p>Porção individual com molho especial.</p>
+            <span class="preco">R$ 15.00</span>
+            <button onclick="adicionarCarrinho('Batata Frita Rústica', 15.00)">Adicionar</button>
+        </div>
+    </main>
+
+    <div id="carrinho-flutuante" onclick="enviarPedido()">
+        🛒 Finalizar Pedido (<span id="qtd-itens">0</span> itens)
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
